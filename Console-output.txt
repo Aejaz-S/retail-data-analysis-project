@@ -1,0 +1,82 @@
+23/10/28 08:22:05 INFO MicroBatchExecution: Streaming query made progress: {
+  "id" : "e9c22772-27a7-4ebd-8121-547d212fca88",
+  "runId" : "af28db17-14f3-4671-b8d5-87a221e8ae38",
+  "name" : null,
+  "timestamp" : "2023-10-28T08:22:00.001Z",
+  "batchId" : 27,
+  "numInputRows" : 13,
+  "inputRowsPerSecond" : 0.21666305561573976,
+  "processedRowsPerSecond" : 2.389705882352941,
+  "durationMs" : {
+    "addBatch" : 4939,
+    "commitOffsets" : 19,
+    "getBatch" : 0,
+    "latestOffset" : 12,
+    "queryPlanning" : 35,
+    "triggerExecution" : 5440,
+    "walCommit" : 434
+  },
+  "eventTime" : {
+    "avg" : "2023-10-28T08:26:03.923Z",
+    "max" : "2023-10-28T08:26:23.000Z",
+    "min" : "2023-10-28T08:25:36.000Z",
+    "watermark" : "2023-10-28T08:24:31.000Z"
+  },
+  "stateOperators" : [ {
+    "operatorName" : "stateStoreSave",
+    "numRowsTotal" : 3,
+    "numRowsUpdated" : 2,
+    "allUpdatesTimeMs" : 204,
+    "numRowsRemoved" : 1,
+    "allRemovalsTimeMs" : 420,
+    "commitTimeMs" : 10725,
+    "memoryUsedBytes" : 90736,
+    "numRowsDroppedByWatermark" : 0,
+    "numShufflePartitions" : 200,
+    "numStateStoreInstances" : 200,
+    "customMetrics" : {
+      "loadedMapCacheHitCount" : 5400,
+      "loadedMapCacheMissCount" : 200,
+      "stateOnCurrentVersionSizeBytes" : 24720
+    }
+  } ],
+  "sources" : [ {
+    "description" : "KafkaV2[Subscribe[real-time-project]]",
+    "startOffset" : {
+      "real-time-project" : {
+        "0" : 2252087
+      }
+    },
+    "endOffset" : {
+      "real-time-project" : {
+        "0" : 2252100
+      }
+    },
+    "latestOffset" : null,
+    "numInputRows" : 13,
+    "inputRowsPerSecond" : 0.21666305561573976,
+    "processedRowsPerSecond" : 2.389705882352941
+  } ],
+  "sink" : {
+    "description" : "FileSink[/user/ec2-user/time_kpi]",
+    "numOutputRows" : -1
+  }
+}
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_125_piece0 on ip-172-31-46-101.ec2.internal:44649 in memory (size: 131.3 KiB, free: 911.7 MiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_125_piece0 on ip-172-31-47-15.ec2.internal:38587 in memory (size: 131.3 KiB, free: 4.8 GiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_125_piece0 on ip-172-31-40-176.ec2.internal:39507 in memory (size: 131.3 KiB, free: 4.8 GiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_122_piece0 on ip-172-31-46-101.ec2.internal:44649 in memory (size: 44.0 KiB, free: 911.7 MiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_122_piece0 on ip-172-31-47-15.ec2.internal:38587 in memory (size: 44.0 KiB, free: 4.8 GiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_122_piece0 on ip-172-31-40-176.ec2.internal:39507 in memory (size: 44.0 KiB, free: 4.8 GiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_118_piece0 on ip-172-31-46-101.ec2.internal:44649 in memory (size: 44.0 KiB, free: 911.8 MiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_118_piece0 on ip-172-31-47-15.ec2.internal:38587 in memory (size: 44.0 KiB, free: 4.8 GiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_118_piece0 on ip-172-31-40-176.ec2.internal:39507 in memory (size: 44.0 KiB, free: 4.8 GiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_124_piece0 on ip-172-31-46-101.ec2.internal:44649 in memory (size: 129.3 KiB, free: 911.9 MiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_124_piece0 on ip-172-31-47-15.ec2.internal:38587 in memory (size: 129.3 KiB, free: 4.8 GiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_124_piece0 on ip-172-31-40-176.ec2.internal:39507 in memory (size: 129.3 KiB, free: 4.8 GiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_119_piece0 on ip-172-31-46-101.ec2.internal:44649 in memory (size: 44.0 KiB, free: 911.9 MiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_119_piece0 on ip-172-31-40-176.ec2.internal:39507 in memory (size: 44.0 KiB, free: 4.8 GiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_119_piece0 on ip-172-31-47-15.ec2.internal:38587 in memory (size: 44.0 KiB, free: 4.8 GiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_121_piece0 on ip-172-31-46-101.ec2.internal:44649 in memory (size: 44.0 KiB, free: 912.0 MiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_121_piece0 on ip-172-31-47-15.ec2.internal:38587 in memory (size: 44.0 KiB, free: 4.8 GiB)
+23/10/28 08:22:16 INFO BlockManagerInfo: Removed broadcast_121_piece0 on ip-172-31-40-176.ec2.internal:39507 in memory (size: 44.0 KiB, free: 4.8 GiB)
